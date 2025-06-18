@@ -16,7 +16,7 @@ This is my responsive and modern personal portfolio website built using HTML, CS
 - ✅ Mobile Responsive
 
 ## Live Project Link
-- (hritik-portfolio-flax.vercel.app)
+- (https://hritik-portfolio-flax.vercel.app/)
 
 ## Connect With Me
 
