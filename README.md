@@ -20,6 +20,6 @@ This is my responsive and modern personal portfolio website built using HTML, CS
 
 ## Connect With Me
 
-- 📧 Email:[roushan2019self@gmail.com] 
-- 💼 LinkedIn:(https://www.linkedin.com/in/hritik-maurya-915b232b6/)
+-  Email:[roushan2019self@gmail.com] 
+-  LinkedIn:(https://www.linkedin.com/in/hritik-maurya-915b232b6/)
 
