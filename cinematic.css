@@ -1,0 +1,93 @@
+/* CINEMATIC HERO OVERRIDES - NUCLEAR FIX */
+
+/* 1. Force Home Section Layout */
+.home {
+    position: relative !important;
+    overflow: hidden !important;
+    justify-content: flex-start !important;
+    /* Align content to start, image to right */
+    align-items: center !important;
+}
+
+/* 2. Hero Image Container - Desktop Base */
+.home-img {
+    position: absolute !important;
+    top: 5vh !important;
+    /* Anchor to TOP to guarantee face visibility */
+    bottom: auto !important;
+    /* Let bottom extend and get cut off */
+    right: 0 !important;
+    left: auto !important;
+    width: 55vw !important;
+    /* Balanced size */
+    height: auto !important;
+    z-index: 1 !important;
+    background: transparent !important;
+    pointer-events: none !important;
+    /* Let clicks pass through if it covers buttons */
+}
+
+/* 3. Hero Image Element - Desktop Base */
+.home-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: top right !important;
+    /* Explicitly prioritize top/face */
+
+    /* EXPERIMENTAL GLOBAL BLEND:
+       1. Opacity 0.8: Makes the whole image semi-transparent, letting the dark background show through.
+       2. Filter: High contrast to keep details popped even when transparent.
+    */
+    opacity: 0.8 !important;
+    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.8)) contrast(1.2) brightness(0.9) !important;
+
+    /* Keep the edge masking to avoid hard lines */
+    mask-image: linear-gradient(to bottom, transparent 5%, black 20%, black 70%, transparent 100%),
+        linear-gradient(to right, transparent 5%, black 30%, black 70%, transparent 95%) !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 20%, black 70%, transparent 100%),
+        linear-gradient(to right, transparent 5%, black 30%, black 70%, transparent 95%) !important;
+    mask-composite: intersect;
+    -webkit-mask-composite: source-in;
+}
+
+/* 4. MEDIA QUERY OVERRIDES - Prevent shrinkage on Laptop/Tablet */
+@media (max-width: 1285px) {
+    .home-img {
+        width: 73vw !important;
+        /* Force keep size */
+        right: 0 !important;
+        bottom: -15vh !important;
+    }
+
+    .home-img img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-img {
+        width: 80vw !important;
+        /* Even larger on tablets to maintain impact */
+        right: -10vw !important;
+        /* Shift slightly right if needed */
+        bottom: -10vh !important;
+    }
+
+    .home-img img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-img {
+        width: 90vw !important;
+        /* Nearly full width on mobile */
+        right: -20vw !important;
+        bottom: 0 !important;
+    }
+
+    .home-img img {
+        width: 100% !important;
+    }
+}

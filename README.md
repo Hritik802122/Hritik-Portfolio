@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hritik-Portfolio
 This is my responsive and modern personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, certificates, and contact information in a clean, user-friendly layout.
 
@@ -23,3 +24,7 @@ This is my responsive and modern personal portfolio website built using HTML, CS
 -  Email:[roushan2019self@gmail.com] 
 -  LinkedIn:(https://www.linkedin.com/in/hritik-maurya-915b232b6/)
 
+=======
+# Hritik-Portfolio
+This is my responsive and modern personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, certificates, and contact information in a clean, user-friendly layout.
+>>>>>>> def644b (Initial commit)
